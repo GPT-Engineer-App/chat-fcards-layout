@@ -72,8 +72,8 @@ const Index = () => {
           <div className="h-96 overflow-y-auto">
             {/* Chat content goes here */}
           </div>
-          <div className="mt-4">
-            <Input placeholder="Type a message..." />
+          <div className="mt-4 flex items-center">
+            <Input placeholder="Type a message..." className="flex-grow" />
             <Button className="ml-2">Send</Button>
           </div>
         </div>
