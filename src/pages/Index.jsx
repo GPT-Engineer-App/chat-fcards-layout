@@ -52,11 +52,11 @@ const Index = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="h-screen p-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-white p-4 rounded-lg shadow-md">
+        <div className="bg-white p-4 rounded-lg shadow-md flex flex-col h-full">
           <h2 className="text-xl font-bold mb-4">Chat</h2>
-          <div className="h-96 overflow-y-auto">
+          <div className="flex-grow overflow-y-auto">
             {messages.map((message, index) => (
               <div key={index} className="mb-2 p-2 bg-gray-200 rounded-lg">
                 {message}
