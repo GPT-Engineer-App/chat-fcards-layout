@@ -9,11 +9,11 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/login" element={<Login />} />
         <Route element={<SharedLayout />}>
           <Route exact path="/" element={<Index />} />
           <Route exact path="/edit-product" element={<EditProduct />} />
           <Route exact path="/dashboard" element={<Dashboard />} />
-          <Route exact path="/login" element={<Login />} />
         </Route>
       </Routes>
     </Router>
