@@ -16,13 +16,6 @@ import { Label } from "@/components/ui/label";
 const EditProduct = () => {
   return (
     <div className="p-6">
-      <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-        <a href="#" className="hover:underline">Dashboard</a>
-        <span>/</span>
-        <a href="#" className="hover:underline">Products</a>
-        <span>/</span>
-        <span>Edit Product</span>
-      </div>
       <div className="mt-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold">Pro Controller</h1>
         <span className="px-2 py-1 text-sm font-medium text-green-800 bg-green-100 rounded">In stock</span>
