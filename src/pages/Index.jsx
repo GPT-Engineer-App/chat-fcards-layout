@@ -66,73 +66,39 @@ import {
 const Index = () => {
   return (
     <div className="p-4">
-    <Tabs defaultValue="all">
-      <div className="flex items-center">
-        <TabsList>
-          <TabsTrigger value="all">All</TabsTrigger>
-          <TabsTrigger value="active">Active</TabsTrigger>
-          <TabsTrigger value="draft">Draft</TabsTrigger>
-          <TabsTrigger value="archived" className="hidden sm:flex">
-            Archived
-          </TabsTrigger>
-        </TabsList>
-        <div className="ml-auto flex items-center gap-2">
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline" size="sm" className="h-8 gap-1">
-                <ListFilter className="h-3.5 w-3.5" />
-                <span className="sr-only sm:not-sr-only sm:whitespace-nowrap">
-                  Filter
-                </span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuLabel>Filter by</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              <DropdownMenuCheckboxItem checked>
-                Active
-              </DropdownMenuCheckboxItem>
-              <DropdownMenuCheckboxItem>Draft</DropdownMenuCheckboxItem>
-              <DropdownMenuCheckboxItem>
-                Archived
-              </DropdownMenuCheckboxItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-          <Button size="sm" variant="outline" className="h-8 gap-1">
-            <File className="h-3.5 w-3.5" />
-            <span className="sr-only sm:not-sr-only sm:whitespace-nowrap">
-              Export
-            </span>
-          </Button>
-          <Button size="sm" className="h-8 gap-1">
-            <PlusCircle className="h-3.5 w-3.5" />
-            <span className="sr-only sm:not-sr-only sm:whitespace-nowrap">
-              Add Product
-            </span>
-          </Button>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="bg-white p-4 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4">Chat</h2>
+          <div className="h-96 overflow-y-auto">
+            {/* Chat content goes here */}
+          </div>
+          <div className="mt-4">
+            <Input placeholder="Type a message..." />
+            <Button className="ml-2">Send</Button>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Card 1</CardTitle>
+              <CardDescription>Description for card 1</CardDescription>
+            </CardHeader>
+            <CardContent>
+              {/* Card 1 content goes here */}
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Card 2</CardTitle>
+              <CardDescription>Description for card 2</CardDescription>
+            </CardHeader>
+            <CardContent>
+              {/* Card 2 content goes here */}
+            </CardContent>
+          </Card>
         </div>
       </div>
-      <TabsContent value="all">
-        <Card x-chunk="dashboard-06-chunk-0">
-          <CardHeader>
-            <CardTitle>Products</CardTitle>
-            <CardDescription>
-              Manage your products and view their sales performance.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-          {/* <!-- ADD MOST OF THE CODE HERE --> */}
-          </CardContent>
-          <CardFooter>
-            <div className="text-xs text-muted-foreground">
-              Showing <strong>1-10</strong> of <strong>32</strong>{" "}
-              products
-            </div>
-          </CardFooter>
-        </Card>
-      </TabsContent>
-    </Tabs>
-  </div>
+    </div>
   )
 };
 
