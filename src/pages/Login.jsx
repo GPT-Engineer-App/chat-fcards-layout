@@ -82,8 +82,8 @@ const Login = () => {
       <div className="relative hidden w-0 flex-1 lg:block">
         <img
           className="absolute inset-0 h-full w-full object-cover"
-          src="https://via.placeholder.com/150"
-          alt=""
+          src="/images/swedish-alps.jpg"
+          alt="Swedish Alps"
         />
       </div>
     </div>
